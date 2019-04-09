@@ -1,70 +1,89 @@
+/*
+Ebben a file-ban találod az oldalra vonatkozó
+stílusok összességét.
+Itt 2 féle meghatározással találkozhatsz:
+- Típus szerinti, pl: body {}
+- Osztály szerinti, pl: .cikkLeiras
+
+A két meghatározást együtt is használhatod,
+erre lentebb találsz is példát.
+Csapjunk bele!
+*/
+
+/* Tartalom egészére vonatkozó stílus */
 body {
-  background-color: #00202A;
-  color: #E5E5E5;
-  font-family: cursive;
-  margin: 0px;
+  background-color: #00202A; /* Háttérszín */
+  color: #E5E5E5; /* Betűszín */
+  font-family: cursive; /* Betűtípus-csoport */
+  margin: 0px; /* Margó */
 }
 
-/* Navbar */
+/* Navigációs sáv osztályon belül
+a rendezetlen listára vonatkozó stílus */
 .navbar ul {
   margin: 0px;
 }
 
+/* Navigációs sáv osztály egészére vonatkozó stílus */
 .navbar {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  position: fixed;
-  display: block;
+  padding-top: 20px; /* Kitöltés hellyel, felül */
+  padding-bottom: 20px; /* Kitöltés hellyel, alul */
+  position: fixed; /* Rögzített pozíció */
+  display: block; /* Megjelenítés módja */
   background-color: #00202A;
-  width: 100%;
+  width: 100%; /* Szélesség */
 }
 
+/* Navigációs sáv osztályán belül
+a lista elemekre vonatkozó stílus */
 .navbar li {
-  list-style: none;
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  list-style: none; /* Lista stílus: semmilyen */
+  float: left; /* Rendezés balra */
+  padding-left: 50px; /* Kitöltés hellyel, bal oldalon */
+  padding-right: 10px; /* Kitöltés hellyel jobb oldalon */
   width: 15%;
-  padding-left: 50px;
 }
 
+/* A fenti lista elemeken belüli
+linkekre vonatkozó stílus */
 .navbar li a {
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+  text-align: center; /* Szöveg rendezése középre */
+  text-decoration: none; /* Link aláhúzás, dekoráció nélkül */
+  text-transform: uppercase; /* Szöveg átalakítása nagybetűssé */
 }
 
+/* A fenti linkek stílusa, az egér rá*/
 .navbar li:hover {
   background-color: #33464c;
 }
 
-/* News articles */
-
+/* A cikkekre vonatkozó stílus */
 article {
-  border-color: lightgray;
-  border-width: thin;
-  border-style: solid;
-  border-radius: .5rem;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  border-color: lightgray; /* Világosszürke szegély-szín */
+  border-width: thin; /* Vékony szegély-vastagság */
+  border-style: solid; /* Tömör szegély-stílus */
+  border-radius: .5rem; /* Szegély lekerekítése */
+  margin-left: 10px; /* Bal margó */
+  margin-right: 10px; /* Jobb margó */
+  margin-bottom: 10px; /* Alsó margó */
   padding-left: 10px;
   padding-right: 10px;
 }
 
+/* A cikkek tartalmára vonatkozó osztály stílusa */
 .articleContent {
   padding-right: 5px;
   padding-left: 5px;
 }
 
-/* Header */
-
-.logo {
+/* A főcímre vonatkozó osztály stílusa */
+.title {
   text-align: center;
-  font-size: 375%;
+  font-size: 375%; /* Betűméret */
   padding-bottom: 40px;
 }
 
+/* A fejlécre vonatkozó osztály stílusa */
 .mainHeader {
   background-color: #E5E5E5;
   color: #00202A;
@@ -73,10 +92,10 @@ article {
   padding-top: 150px;
 }
 
-/* Description */
+/* Az oldal leírására vonatkozó osztály stílusa */
 
 .mainPage {
   margin: 20px;
-  text-align: justify;
+  text-align: justify; /* Sorkizárt szöveg */
   font-size: 20px;
 }
