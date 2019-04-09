@@ -21,6 +21,14 @@ megfelelően felismerjék. a kódot.
      <!-- Stílus beszúrása -->
     <link href="css/style.css" rel="stylesheet" />
 
+    <!--
+    A href részben kell megadnod
+    a hivatkozás célját. Ebben az esetben ez az oldalhoz tartozó stílusod
+    elérési útja lesz.
+    A rel rész a funkcióját adja meg, a stylesheet jelenti a stílust leíró
+    szöveges file-t.
+    -->
+
     <!-- Egyéb források beszúrása -->
     <script src="js/jQuery.js"></script>
     <script src="js/logic.js"></script>
@@ -53,24 +61,20 @@ megfelelően felismerjék. a kódot.
       <!-- Rendezetlen lista kezdete -->
       <ul>
 
-        <!-- Lista pont kezdete -->
-        <li>
-
-        <!-- Lista pont kezdete -->
+        <!-- Lista elem kezdete -->
         <li id="navIcon">
 
           <!-- Link elem -->
           <a href="#apex-legends">Apex Legends</a>
 
           <!--
-          Egy link elem <a> több részből áll. A href részben kell megadnod
-          a hivatkozás célját. Jelen esetben # -tel kezdődik, mert a jelenlegi
-          oldalra hivatkozik, csak annak egy részére.
+          Egy link elem <a> több részből áll. Jelen esetben a href # -tel
+          kezdődik, mert a jelenlegi oldalra hivatkozik, annak csak egy részére.
           A szövegnek, amit hivatkozássá szeretnél alakítani <a>IDE</a> kell
           írnod.
           -->
 
-        </li> <!-- Lista pont vége -->
+        </li> <!-- Lista elem vége -->
 
         <li id="navIcon">
           <a href="#rainbow-6">Rainbow 6 Siege</a>
@@ -88,23 +92,32 @@ megfelelően felismerjék. a kódot.
           <a href="#fifa19">FIFA19</a>
         </li>
 
-      </ul>
+      </ul> <!-- Rendezetlen lista vége -->
 
-    </nav>
+    </nav> <!-- Navigációs sáv vége -->
 
+    <!-- Fejléc kezdete -->
     <header class="mainHeader">
 
+    <!--
+    Itt találkozol először a class tulajdonsággal.
+    Ez az adat az elem stílusára vonatkozik. Itt meg tudod adni, hogy erre az
+    elemre milyen stílus vonatkozzon.
+    -->
+
+    <!-- Elválasztó elem kezdete -->
     <div>
 
-      <h1 class="logo">MyGameStar</h1>
+      <!-- Címsor 1 kezdete -->
+      <h1 class="title">MyGameStar</h1>
 
-    </div>
+    </div> <!-- Elválasztó elem vége -->
 
     </header>
 
 
     <div class="mainPage">
-      Sziasztok!<br/>
+      Sziasztok!<br/> <!-- Sortörés -->
       Ezen az oldalon megtalálod a rövid leírását 5 népszerű PC játéknak. Először egy HTML vázat késztíettem a weblapnak, majd CSS kiterjesztésű fájlban szépítgettem rajta. A weblap fejlesztése során megismerkedtem a legtöbb HTML tag-gel, mint például a div-vel az article-el és a title-el. Azt is megtanultam, hogy hogyan tudok hozzáadni id-t vagy class-t egy adott elemhez. CSS-en belül megismertem, hogy hogyan tudok tag-re vagy class-ra stílust írni, valamint azt is, hogy mi a különbség a padding és a margin között. Arra is ráébredtem út közben, hogy a ";" nem teljesen felesleges a billentyűzetemen. <br/>
       <br/>
       Ezt az oldalt a Cloud4est projekt napján hoztam létre. A Dynam1C0de csapat tagjai segítettek nekem a munkámban. <br/>
@@ -114,12 +127,17 @@ megfelelően felismerjék. a kódot.
 
     <div class="feed">
 
+        <!-- Cikk kezdete -->
         <article id="apex-legends">
+
+          <!-- Címsor 2 -->
           <h2>Apex Legends</h2>
+
+          <!-- Bekezdés kezdete -->
           <p class="articleContent">
             A Titanfall sorozat battle royale műfajú spin-offja, amiben falon futás és titánok nélkül küzdhetnek a játékosok különböző képességekkel felszerelt karakterek szerepében. Húsz csapat, hatvan fő, egy kielégítően nagy játéktér; fogd, amit tudsz, és maradj háromfős osztagoddal életben!
-          </p>
-        </article>
+          </p> <!-- Bekezdés vége -->
+        </article> <!-- Cikk vége -->
 
         <article id="rainbow-6">
           <h2>Rainbow 6 Siege</h2>
@@ -141,6 +159,7 @@ megfelelően felismerjék. a kódot.
             A Riot Games ingyenesen játszható MOBA játéka. Anno a Warcraft 3-hoz nem sokkal megjelenése után elkészült az egyik leghíresebb mod, a Defense of the Ancients (Dota), mely hihetetlen népszerűségre tett szert, és egy komplett új játékstílust (MOBA) teremtett. A Dota sikerét megismételni kívánó Riot Games stúdió 2008-ban bejelentette saját ingyenesen játszható MOBA játékát, a League of Legends-et. A LoL megjelenésekor közvetlenül még nem volt népszerű, ám a játék fejlesztésével és az idő előrehaladtával hatalmas népszerűségre tett szert és megkerülhetetlen szereplője az egyre felkapottabbá váló eSport meccseknek. Maga a játék két szemben álló csapat (alapvetően 5v5, de léteznek más játékmódok is) harcáról szól, melyben minden játékos 1 karaktert irányít. A cél az ellenség bázisában levő 'nexus' lerombolása, melyhez 3, elpusztítandó tornyokkal teli lehetséges útvonal vezet. A játékmenet 3 fő részből áll: a különböző semleges, illetve ellenséges, gép irányította ellenfelekből való pénzszerzés, a különböző felszerelések vásárlása a pénzből, valamint az ellenséges hősök és tornyok elpusztítása. A játék ingyenesen letölthető PC-re.
           </p>
         </article>
+
         <article id="fifa19">
           <h2>FIFA19</h2>
           <p class="articleContent">
@@ -150,6 +169,6 @@ megfelelően felismerjék. a kódot.
 
     </div>
 
-  </body>
+  </body> <!-- Az oldal tartalmának vége -->
 
-</html>
+</html> <!-- Struktúra vége -->
