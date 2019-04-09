@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-    <link href="css/style.css" rel="stylesheet" />
+<!--
+A fenti 2 sor adja meg a későbbi kód típusát.
+Ez szükséges ahhoz, hogy a böngésző, és egyéb programok
+megfelelően felismerjék. a kódot.
+-->
 
-    <title>
+  <head> <!-- Fej szekció kezdete -->
+
+    <!--
+    Ez a szekció az oldal "feje", angolul head. Itt adhatod meg azt a címet,
+    ami a böngésző fülén jelenik meg.
+    Ezen kívül itt tudod megadni az oldalra vonatkozó stílus,
+    és egyéb forrás elérési útját. A megadott file-okat az oldal egyben
+    fogja kezelni, így a stílus vonatkozik a leírt szövegre.
+  -->
+
+    <link href="css/style.css" rel="stylesheet" /> <!-- Stílus beszúrása -->
+
+    <title> <!-- Böngésző fülén megjelenő cím -->
       MyGameStar
     </title>
-  </head>
+
+  </head> <!--Fej szekció vége -->
 
 
-  <body>
+  <body> <!-- Az oldal tartalmának kezdete -->
 
-    <nav class="navbar">
+    <!--
+    A fenti body tag nyitja meg a szekciót, ahova az oldal tartalmát írhatod.
+    Ezen belül rengeteg különböző elemet használhatsz, más-más feladatokra.
+    Ez lesz az oldal fő eleme, ami a leginkább számít.
+    -->
 
-      <ul>
+    <nav class="navbar"> <!-- Navigációs sáv kezdete -->
 
-        <li>
-          <a href="#apex-legends">Apex Legends</a>
-        </li>
+      <!--
+      Ez egy gyakori elem a mai weboldalaknál, mivel segíti a tájékozódást az
+      oldalon. Lehet vízszintes, vagy függőleges elrendezésű, a lényege,
+      hogy listázza az aloldalakat.
+      -->
+
+      <ul> <!-- Rendezetlen lista kezdete -->
+
+        <li> <!-- Lista pont kezdete -->
+          <a href="#apex-legends">Apex Legends</a> <!-- Link elem -->
+
+          <!--
+          Egy link elem <a> több részből áll. A href részben kell megadnod
+          a hivatkozás célját. Jelen esetben # -tel kezdődik, mert a jelenlegi
+          oldalra hivatkozik, csak annak egy részére.
+          A szövegnek, amit hivatkozássá szeretnél alakítani az <a>IDE</a> közé
+          kell írnod.  
+          -->
+
+        </li> <!-- Lista pont vége -->
 
         <li>
           <a href="#rainbow-6">Rainbow 6 Siege</a>
