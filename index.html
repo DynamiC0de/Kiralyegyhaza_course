@@ -19,6 +19,10 @@ megfelelően felismerjék. a kódot.
 
     <link href="css/style.css" rel="stylesheet" /> <!-- Stílus beszúrása -->
 
+    <script src="js/jQuery.js"></script>
+
+    <script src="js/logic.js"></script>
+
     <title> <!-- Böngésző fülén megjelenő cím -->
       MyGameStar
     </title>
@@ -44,7 +48,7 @@ megfelelően felismerjék. a kódot.
 
       <ul> <!-- Rendezetlen lista kezdete -->
 
-        <li> <!-- Lista pont kezdete -->
+        <li id="navIcon"> <!-- Lista pont kezdete -->
           <a href="#apex-legends">Apex Legends</a> <!-- Link elem -->
 
           <!--
@@ -52,26 +56,24 @@ megfelelően felismerjék. a kódot.
           a hivatkozás célját. Jelen esetben # -tel kezdődik, mert a jelenlegi
           oldalra hivatkozik, csak annak egy részére.
           A szövegnek, amit hivatkozássá szeretnél alakítani az <a>IDE</a> közé
-          kell írnod.  
+          kell írnod.
           -->
 
         </li> <!-- Lista pont vége -->
 
-        <li>
+        <li id="navIcon">
           <a href="#rainbow-6">Rainbow 6 Siege</a>
         </li>
 
-          <a href="#wot">
+        <li id="navIcon">
+            <a href="#wot">World of Tanks</a>
+        </li>
 
-            <li>World of Tanks</li>
-
-          </a>
-
-        <li>
+        <li id="navIcon">
           <a href="#lol">League of Legends</a>
         </li>
 
-        <li>
+        <li id="navIcon">
           <a href="#fifa19">FIFA19</a>
         </li>
 
